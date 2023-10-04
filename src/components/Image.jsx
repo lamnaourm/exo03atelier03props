@@ -1,6 +1,11 @@
+import React, { Component } from 'react'
 
-function Image({image, titre}) {
-    return <img src={image} alt={titre} />
+export default class Image extends Component {
+  render() {
+    return (
+      <div>
+        <img src={this.props.image} alt={this.props.titre} />
+      </div>
+    )
+  }
 }
-
-export default Image;
