@@ -1,5 +1,45 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
 .biblio {
-  max-width: 100vw;
+  max-width: 80vw;
+  margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.livre {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.livre img {
+  width: 100%;
+  height: 300px;
+}
+
+.header {
+  position: sticky;
+  background-color: aquamarine;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.header h1{
+  margin: 0;
+  padding: 0;
+}
+
+.livre button {
+  width: 100%;
+  padding: 4px;
+  background-color: blue;
+  color: white;
+  border: none;
 }

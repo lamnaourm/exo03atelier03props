@@ -1,5 +1,6 @@
 import './App.css';
 import Bibliotheque from './components/Bibliotheque';
+import Header from './components/Header';
 
 const livres = [
   { id: 1, titre: 'Reminders of Him: A Novel', prix: 90.97, url: 'https://m.media-amazon.com/images/I/71rdsaOMvVL._SY522_.jpg' },
@@ -17,6 +18,7 @@ const livres = [
 function App() {
   return (
     <div className="container">
+      <Header />
       <Bibliotheque livres={livres} />
     </div>
   );
